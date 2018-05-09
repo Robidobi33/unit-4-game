@@ -1,0 +1,78 @@
+body {
+
+    background-image: url("https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/seriesDetail2.jpg?fit=inside%7C1920:1080");
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.titlePic {
+    background-image: url("https://assets.foxdcg.com/dpp-uploaded/images/the-simpsons/logo-tab2.png");
+    width:300px;
+    height:100px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    float:right;
+    margin:15px 160px 0px 0px;
+}
+
+
+#heroOne{
+    background-image:url("https://vignette.wikia.nocookie.net/simpsons/images/6/65/Bart_Simpson.png/revision/20180313180421");
+    width:100px;
+    height:100px;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    background-color: deepskyblue;
+}
+
+#heroTwo{
+    background-image:url("https://assets.fxnetworks.com/cms/prod/shows/the-simpsons/photos/swsb_character_fact_nedflanders_550x960.png"); 
+    width:100px;
+    height:100px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color:blueviolet;
+}
+
+#heroThree{
+    background-image:url("https://vignette.wikia.nocookie.net/simpsons/images/0/02/Homer_Simpson_2006.png/revision/latest?cb=20091207194310");
+    width:100px;
+    height:100px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgb(55, 209, 63);
+}
+
+#heroFour{
+    background-image:url("https://static.simpsonswiki.com/images/thumb/9/9d/Maggie_Simpson.png/250px-Maggie_Simpson.png");
+    width:100px;
+    height:100px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: rgb(224, 93, 202);
+}
+
+li{
+    padding-bottom:100px;
+    padding-right:20px;
+    float: left;
+    text-align: center;
+    vertical-align: center;
+    list-style-type: none;
+    margin-right:10px;
+    line-height: 420px;
+    border:5px solid white;
+    border-bottom:25px solid white;
+    color:rgb(0, 0, 0);
+    font-family: 'Gloria Hallelujah', sans-serif;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+
+
