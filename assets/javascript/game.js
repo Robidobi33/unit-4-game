@@ -1,40 +1,68 @@
-var homer, bart, maggie, ned, health = 0, her, enemies = [], characters = [];
+//variables
+var health = 0, hero, enemy = [], item;
 
-characters = [
+//object array of characters
+var characters = [
 
-homer = {
-    name: "Homer",
-    health: 300,
-    attack: Math.floor(Math.random() * 10)
-},
+    homer = {
+        name: "Homer",
+        health: 300,
+        dmg: Math.floor(Math.random() * 10)
+    },
 
-bart = {
-    name: "Bart",
-    health: 175,
-    attack: Math.floor(Math.random() * 10) + 10
-},
+    bart = {
+        name: "Bart",
+        health: 175,
+        dmg: Math.floor(Math.random() * 10) + 10
+    },
 
-maggie = {
-    name: "maggie",
-    health: 90,
-    attack: Math.floor(Math.random() * 20) + 10
-},
- ned = {
-     name: "Flanders",
-     health: 230,
-     attack: Math.floor(Math.random() * 10) + 5
- }
+    maggie = {
+        name: "maggie",
+        health: 90,
+        dmg: Math.floor(Math.random() * 20) + 10
+    },
+    ned = {
+        name: "Flanders",
+        health: 230,
+        dmg: Math.floor(Math.random() * 10) + 5
+    }
 
 ]
+console.log(characters);
+console.log(maggie.attack);
 
- console.log(maggie.attack);
+function textChange(){
+    $("#heroOne").html("HP: 175");
+    $("#heroTwo").html("HP: 230");
+    $("#heroThree").html("HP: 300");
+    $("#heroFour").html("HP: 90");
+}
 
- /*switch(){
-    case :
-    break;
+function textRevert (){
+    $("#heroOne").html("Bart");
+    $("#heroTwo").html("Flanders");
+    $("#heroThree").html("Homer");
+    $("#heroFour").html("Maggie");
+    
+}
 
- }
+//start round fucntion
 
-function startAttack(hero, enemies){
-    alert("hello" + hero);
-}*/
+function startRound(hero, enemy){
+    
+    alert("hello" + hero.name);
+
+    var heroAttack = 
+    hero + " hit " + enemy[x] + " with a " + item + " for " + dmg + "!";
+
+    var enemyAttack = 
+    enemy[x] + " hit " + hero + " with a " + item + " for " + dmg + "!";
+
+
+ 
+}
+
+
+
+
+
