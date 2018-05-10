@@ -48,9 +48,17 @@ function textRevert (){
 
 //start round fucntion
 
-function startRound(hero, enemy){
+function startRound(hero){
     
-    alert("hello" + hero.name);
+    for(i=0;i<characters.lenght;i++){
+        alert(characters[i]);
+    }
+
+    //index of name
+    //splice
+
+    //for loop for the remaining 3
+
 
     var heroAttack = 
     hero + " hit " + enemy[x] + " with a " + item + " for " + dmg + "!";
