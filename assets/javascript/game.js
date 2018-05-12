@@ -1,35 +1,43 @@
 //variables
-var health = 0, hero, enemy = [], item;
+var health = 0, hero = 0, enemy = [];
 
 //object array of characters
 var characters = [
 
-    homer = {
-        name: "Homer",
-        health: 300,
-        dmg: Math.floor(Math.random() * 10)
-    },
 
     bart = {
         name: "Bart",
         health: 175,
-        dmg: Math.floor(Math.random() * 10) + 10
+        d1: 10,
+        d2: 10,
     },
 
-    maggie = {
-        name: "maggie",
-        health: 90,
-        dmg: Math.floor(Math.random() * 20) + 10
-    },
     ned = {
         name: "Flanders",
         health: 230,
-        dmg: Math.floor(Math.random() * 10) + 5
-    }
+        d1: 10,
+        d2: 5, 
+    },
 
+    homer = {
+        name: "Homer",
+        health: 300,
+        d1: 10,
+        d2: 1,
+    },
+
+
+    maggie = {
+        name: "Maggie",
+        health: 90,
+        d1: 20,
+        d2: 10,
+    },
+    
 ]
-console.log(characters);
-console.log(maggie.attack);
+
+//alert(characters[2].name)
+console.log(maggie);
 
 function textChange(){
     $("#heroOne").html("HP: 175");
@@ -49,23 +57,67 @@ function textRevert (){
 //start round fucntion
 
 function startRound(hero){
+   
+    $("#battle").css('visibility', 'visible');
+
+  //alert(characters.indexOf)
+  
+  }
+
+function startFight(hero){
     
-    for(i=0;i<characters.lenght;i++){
-        alert(characters[i]);
+    var items = ["donut","apple","one of Apu's kids", "Flander's mustache", "pacifier"];
+
+    item = Math.floor(Math.random() * items.length);
+    item2 = Math.floor(Math.random() * items.length);
+
+    for(i = 0; i < characters.length; i++){
+      
+        if(characters[hero] !== characters[i]){
+
+            $("#battleBox").html(characters[hero].name + "   VS   " + characters[i].name);
+
+            if(characters[hero].health && characters[i].health !== 0){
+                
+                var heroDmg = Math.floor(Math.random() * characters[hero].d1) + characters[hero].d2;
+                var charDmg = Math.floor(Math.random() * characters[i].d1) + characters[i].d2;
+               
+                var heroAttack = 
+                characters[hero].name + " hit " + characters[i].name + " with a " + items[item] + " for " + heroDmg + "!" + "<br>";
+                
+                var charAttack = 
+                characters[i].name + " hit " + characters[hero].name + " with a " + items[item2] + " for " +  charDmg + "!";
+           
+                $("#battleBox").html(heroAttack + "  " + charAttack);
+               
+                heroDmg += heroDmg;
+                charDmg += charDmg;
+
+                var heroHealth = characters[hero].health - charDmg;
+                var charHealth = characters[i].health - heroDmg;
+           
+                if(heroHealth === 0){
+                    $("#battleBox").html("You Lose!");
+                }
+                
+
+
+            }
+
+            
+
+
+        }
+
+
+
+
+
+
     }
 
-    //index of name
-    //splice
-
-    //for loop for the remaining 3
-
-
-    var heroAttack = 
-    hero + " hit " + enemy[x] + " with a " + item + " for " + dmg + "!";
-
-    var enemyAttack = 
-    enemy[x] + " hit " + hero + " with a " + item + " for " + dmg + "!";
-
+    
+   
 
  
 }

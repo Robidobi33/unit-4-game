@@ -18,33 +18,36 @@
     <ul>
         <li id = "heroOne" 
             class = "text" 
-            onclick = "startRound(bart)" 
+            onclick = "startRound(0)" 
             onmouseover = "textChange()"
             onmouseout= "textRevert()"
             >Bart</li>
 
         <li id = "heroTwo" 
             class = "text" 
-            onclick = "startRound(ned, characters)"
+            onclick = "startRound(1)"
             onmouseover = "textChange()"
             onmouseout= "textRevert()"
             >Flanders</li>
 
         <li id = "heroThree" 
             class = "text" 
-            onclick = "startRound(homer, characters)"
+            onclick = "startRound(2)"
             onmouseover = "textChange()"
             onmouseout= "textRevert()"
             >Homer</li>
 
         <li id = "heroFour" 
             class = "text" 
-            onclick = "startRound(maggie, characters)"
+            onclick = "startRound(3)"
             onmouseover = "textChange()"
             onmouseout= "textRevert()"
             >Maggie</li>
     </ul>    
 
+    <div id = "battle" onclick="startFight(hero)" style="visibility: hidden;" >Attack</div>
+    <div id = "battleBox"></div>
+    <div id = "battleBox2"></div>
     
   
 </body>

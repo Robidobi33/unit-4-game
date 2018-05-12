@@ -70,6 +70,32 @@ li{
     
 }
 
+#battle{
+    position: absolute;
+    
+    margin:500px auto auto 300px;
+}
+
+#battleBox{
+    width: 550px;
+    height: 100px;
+    position: absolute;
+    margin: 550px auto auto 50px;
+    background-color:rgba(231, 214, 187, 0);
+    z-index: 6;
+   
+}
+
+#battleBox2{
+    width: 550px;
+    height: 100px;
+    position: absolute;
+    margin: 550px auto auto 50px;
+    background-color:rgba(231, 214, 187, 0);
+    z-index: 6;
+   
+}
+
 
 
 
