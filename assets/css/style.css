@@ -67,6 +67,7 @@ li{
     color:rgb(0, 0, 0);
     font-family: 'Gloria Hallelujah', sans-serif;
     font-size: 20px;
+    cursor:pointer;
     
 }
 
@@ -83,6 +84,8 @@ li{
     font-family: 'Gloria Hallelujah', sans-serif;
     color:black;
     padding:10px;
+    cursor:pointer;
+
 }
 
 #battleBox{
